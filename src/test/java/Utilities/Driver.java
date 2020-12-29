@@ -38,11 +38,12 @@ public class Driver {
                     WebDriverManager.operadriver().setup();
                     threadDriver.set(new OperaDriver());
                     break;
-
+        /*
                 default:
                     WebDriverManager.chromedriver().setup();
                     threadDriver.set( new ChromeDriver() );
                     break;
+         */
 
 
 
@@ -51,7 +52,7 @@ public class Driver {
                       Sonrasında bunu Github a da push etmelisin çünkü Jenkins Github adresinden alıp çalışıyor.
                       Not: Aşağıdaki yorumu açınca İntellij de run edildiğinde testleri browserı çalıştırmadan yapıyor.*/
 
-        /*
+
                 default:
                     WebDriverManager.chromedriver().setup();
 
@@ -60,7 +61,7 @@ public class Driver {
 
                     threadDriver.set( new ChromeDriver(options) );
                     break;
-         */
+
 
 
 
