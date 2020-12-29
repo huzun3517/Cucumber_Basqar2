@@ -16,7 +16,7 @@ import org.testng.annotations.Parameters;
         glue = {"StepDefinitions"},
         dryRun = false,
         plugin = {
-                "com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport/ExtentReportSmokeTest.html"
+                "com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport/SmokeTest_Parallel.html"
         }
 )
 
@@ -36,7 +36,6 @@ public class SmokeTest_Parallel extends AbstractTestNGCucumberTests {
 
             Reporter.loadXMLConfig("src/test/java/XMLFiles/extentReportSet.xml");
             Reporter.setSystemInfo("User Name","Team 1");
-            Reporter.setSystemInfo("Application Name","Basqar");
             Reporter.setSystemInfo("Application Name","Basqar");
             Reporter.setSystemInfo("Operating System Info",System.getProperty("os.name"));
             Reporter.setSystemInfo("Department","QA");

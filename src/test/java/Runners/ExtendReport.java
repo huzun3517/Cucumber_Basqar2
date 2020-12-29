@@ -26,15 +26,14 @@ public class ExtendReport extends AbstractTestNGCucumberTests {
     }
 
     @AfterClass
-    public static void afterClass()
-    {
-        // ayarlar alındı, cucumber extend reporttan haberi oldu
-        Reporter.loadXMLConfig("src/test/java/XMLFiles/extendReportSet.xml");
-        Reporter.setSystemInfo("User Name","Team 1");
-        Reporter.setSystemInfo("Application Name", "Basqar");
-        Reporter.setSystemInfo("Operating System Info", System.getProperty("os.name"));
-        Reporter.setSystemInfo("Department", "QA");
-        Reporter.setTestRunnerOutput("Test excetuion Cucumber report");
-    }
+    public static void afterClass(){
 
+        Reporter.loadXMLConfig("src/test/java/XMLFiles/extentReportSet.xml");
+        Reporter.setSystemInfo("User Name","Team 1");
+        Reporter.setSystemInfo("Application Name","Basqar");
+        Reporter.setSystemInfo("Operating System Info",System.getProperty("os.name"));
+        Reporter.setSystemInfo("Department","QA");
+        Reporter.setTestRunnerOutput("Test execution Cucumber report");
+
+    }
 }
