@@ -5,6 +5,7 @@ Feature: Position Categories Functionality
     When Enter username and password and click Login button
     Then User should login successfully
 
+  @RegressionTest
   Scenario: US_13 TC_01 view Position Categories page
     When Click on the element in the position categories content class
       | humanResources     |

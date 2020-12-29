@@ -5,6 +5,7 @@ Feature: Dismissal Articles  Functionality
     When Enter username and password and click Login button
     Then User should login successfully
 
+  @SmokeTest
   Scenario: US_14 TC_01  Dismissal Articlespage
     When Click on the element in the Dismissal Articles page content class
       | humanResourcess   |
@@ -62,7 +63,7 @@ Feature: Dismissal Articles  Functionality
 
     Then Dismissal Articles Success Message should be displayed
 
-
+  @RegressionTest
   Scenario: US_14 TC_05 Dismissal Articles User can find the name with search button
     When Click on the element in the Dismissal Articles page content class
       | humanResourcess     |

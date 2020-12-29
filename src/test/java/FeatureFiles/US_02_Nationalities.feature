@@ -5,7 +5,7 @@ Feature: Nationalities Functionality
     When Enter username and password and click Login button
     Then User should login successfully
 
-  @RegressionTest
+
   Scenario: US_02 TC_01 Create new Nationalities
     When Click on the element in the content class
       | setup         |

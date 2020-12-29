@@ -6,7 +6,7 @@ Feature: Citizenships Functionality
     When Enter username and password and click Login button
 
 
-  @SmokeTest
+
   Scenario: US_01 TC_01 create
     When click on button with button name
       | setup       |

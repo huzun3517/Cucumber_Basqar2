@@ -9,7 +9,6 @@ Feature:  Item Categories Page functionality
       | Inventory_Setup |
       | Item_Categories |
 
-  @RegressionTest
   Scenario: US_08 TC_01 Item Categories
     When page validation Item_Categories
 

@@ -8,25 +8,18 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
  * sahip senaryolar çalıştıralacak sadece tüm senaryolardan
  * tags etiketi sınırlama yaptı sadece bu etikete veya grup adına sahip
  * olanlar çalışacak
- *
- * plugin kısmı ise basit rapor oluşturan kısım
- * "html:target/cucumber-report" : target klasörünün altında cucumber-report un
- * altında basit bir rapor oluşturacak.
- *
- * "json:target/cucumber.json" : aynı raporu JSON formatında oluşturacak.
  */
 
 @CucumberOptions(
-        tags = {"@RegressionTest"},
+        tags = {"@SmokeTest"},
         features = {"src/test/java/FeatureFiles"},
         glue = {"StepDefinitions"},
         dryRun = false,
-        plugin = { //basit rapor oluşturan plugin
+        plugin = { //basit rapor oluşturan plugin  // bu bölüm sonradan jenkins report için eklendi
                 "html:target/cucumber-report",
                 "json:target/cucumber.json"
         }
 )
-public class RegressionTest extends AbstractTestNGCucumberTests {
+public class TestRunnerSmoke extends AbstractTestNGCucumberTests {
 
 }
-

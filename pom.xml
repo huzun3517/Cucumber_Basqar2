@@ -121,7 +121,7 @@
                         <configuration>
                             <includes>
                                 <!-- for  run class or classes-->
-                                <include>**/SmokeTest.java</include>
+                                <include>**/TestRunnerSmoke.java</include>
                             </includes>
                             <testFailureIgnore>true</testFailureIgnore>
                         </configuration>
@@ -141,7 +141,7 @@
                         <configuration>
                             <includes>
                                 <!-- for  run class or classes-->
-                                <include>**/RegressionTest.java</include>
+                                <include>**/TestRunnerRegression.java</include>
                             </includes>
                             <testFailureIgnore>true</testFailureIgnore>
                         </configuration>
@@ -163,7 +163,7 @@
 
                     <includes>
                         <!-- for  run class or classes  **/:bulunduğu lokasyonu bütün klasörlere göre bulabiliyor   -->
-                        <include>**/SmokeTest.java</include>
+                        <include>**/TestRunnerSmoke.java</include>
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
